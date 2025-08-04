@@ -1,3 +1,9 @@
+"""supervisely.solution package
+
+This subpackage aggregates commonly-used solution components and utilities so they can be
+imported directly from ``supervisely.solution``.  All exported symbols are declared in
+``__all__`` for clarity and to avoid leaking internal names.
+"""
 from supervisely.solution.components.cloud_import import CloudImport
 from supervisely.solution.components.labeling_queue import LabelingQueue
 from supervisely.solution.components.link_node import LinkNode
@@ -6,5 +12,18 @@ from supervisely.solution.components.move_labeled import MoveLabeled
 from supervisely.solution.components.project import ProjectNode
 from supervisely.solution.components.smart_sampling import SmartSampling
 from supervisely.solution.components.train_val_split import TrainValSplit
-from supervisely.solution.components.video_samling import VideoSampling
+from supervisely.solution.components.video_sampling import VideoSampling
 from supervisely.solution.graph_builder import SolutionGraphBuilder
+
+__all__ = [
+    "CloudImport",
+    "LabelingQueue",
+    "LinkNode",
+    "ManualImport",
+    "MoveLabeled",
+    "ProjectNode",
+    "SmartSampling",
+    "TrainValSplit",
+    "VideoSampling",
+    "SolutionGraphBuilder",
+]
