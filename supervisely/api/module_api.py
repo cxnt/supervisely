@@ -691,6 +691,10 @@ class ApiField:
     """"""
     UPDATE_STRATEGY = "updateStrategy"
     """"""
+    FILE_PATH = "filePath"
+    """"""
+    FILE_KEY = "fileKey"
+    """"""
     LOCAL_ENTITIES_COUNT = "localEntitiesCount"
     """"""
     REMOTE_ENTITIES_COUNT = "remoteEntitiesCount"
@@ -702,6 +706,8 @@ class ApiField:
     CLUSTERING_METHOD = "clusteringMethod"
     """"""
     ERROR_MESSAGE = "errorMessage"
+    """"""
+    UNIQUE_ITEMS = "uniqueItems"
     """"""
 
 

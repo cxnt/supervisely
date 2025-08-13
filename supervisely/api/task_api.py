@@ -1007,11 +1007,12 @@ class TaskApi(ModuleApiBase, ModuleWithStatus):
         Example of experiment_info:
 
             experiment_info = {
-                'experiment_name': '247_Lemons_RT-DETRv2-M',
+                'experiment_name': '247 Lemons RT-DETRv2-M',
                 'framework_name': 'RT-DETRv2',
                 'model_name': 'RT-DETRv2-M',
                 'task_type': 'object detection',
                 'project_id': 76,
+                'project_version': {'id': 222, 'version': 4},
                 'task_id': 247,
                 'model_files': {'config': 'model_config.yml'},
                 'checkpoints': ['checkpoints/best.pth', 'checkpoints/checkpoint0025.pth', 'checkpoints/checkpoint0050.pth', 'checkpoints/last.pth'],
@@ -1022,6 +1023,8 @@ class TaskApi(ModuleApiBase, ModuleWithStatus):
                 'train_val_split': 'train_val_split.json',
                 'train_size': 4,
                 'val_size': 2,
+                'train_collection_id': 530,
+                'val_collection_id': 531,
                 'hyperparameters': 'hyperparameters.yaml',
                 'hyperparameters_id': 45234,
                 'artifacts_dir': '/experiments/76_Lemons/247_RT-DETRv2/',

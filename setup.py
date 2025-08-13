@@ -49,6 +49,7 @@ def get_release_commit(tag: str):
 
 
 def get_version():
+    return "6.73.404+predict.app"
     version = os.getenv("RELEASE_VERSION", None)
     if version is not None:
         return version
@@ -120,9 +121,9 @@ INSTALL_REQUIRES = [
     "rich",
     "click",
     "imutils==0.5.4",
-    "urllib3>=1.26.15, <=2.2.2",
+    "urllib3>=1.26.15, <=2.2.3",
     "cacheout==0.14.1",
-    "jsonschema>=2.6.0,<=4.20.0",
+    "jsonschema>=2.6.0,<=4.23.0",
     "pyjwt>=2.1.0,<3.0.0",
     "zstd",
     "aiofiles",
@@ -292,6 +293,8 @@ setup(
             "tensorboardX",
             "markdown",
             "pymdown-extensions",
+            "tbparse",
+            "kaleido==0.2.1",
         ],
         # legacy dependencies
         "plugins": [

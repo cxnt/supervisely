@@ -152,3 +152,8 @@ from supervisely.app.widgets.bokeh.bokeh import Bokeh
 from supervisely.app.widgets.run_app_button.run_app_button import RunAppButton
 from supervisely.app.widgets.select_collection.select_collection import SelectCollection
 from supervisely.app.widgets.sampling.sampling import Sampling
+from supervisely.app.widgets.deploy_model.deploy_model import DeployModel
+from supervisely.app.widgets.dropdown_checkbox_selector.dropdown_checkbox_selector import (
+    DropdownCheckboxSelector,
+)
+from supervisely.app.widgets.pretrained_model_selector2.pretrained_model_selector2 import PretrainedModelSelector2
